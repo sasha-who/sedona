@@ -12,10 +12,18 @@
 		  			<img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип сайта города Седона">
 		  		</a>  			
 		  		<ul class="navigation">
-	  				<li class="navigation-item"><a href="#">Информация</a></li>
-	  				<li class="navigation-item"><a href="#">Фото и видео</a></li>
-	  				<li class="navigation-item"><a href="#">Карта штата</a></li>
-	  				<li class="navigation-item"><a href="hotels.html">Гостиницы</a></li>
+	  				<li class="navigation-item">
+	  					<a href="#">Информация</a>
+	  				</li>
+	  				<li class="navigation-item">
+	  					<a href="#">Фото и видео</a>
+	  				</li>
+	  				<li class="navigation-item">
+	  					<a href="#">Карта штата</a>
+	  				</li>
+	  				<li class="navigation-item">
+	  					<a href="hotels.html">Гостиницы</a>
+	  				</li>
 	  			</ul>
 	  		</nav>
 	  	</header>
@@ -78,7 +86,34 @@
 	  		<section class="hotel-search">
 	  			<h2 class="visually-hidden">Форма поиска гостиниц в Седоне</h2>
 	  			<p class="interest"><b>Заинтересовались?</b> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-	  			<!-- Здесь будет форма поиска гостиниц -->
+				<button class="button" type="button">Поиск гостиницы в Седоне</button>
+				<form class="search-form" action="" method="post">
+					<p class="search-item">
+						<label>
+							Дата заезда:
+							<input class="arrival-date" type="date" name="arrival-date">
+						</label>
+					</p>
+					<p class="search-item">
+						<label>
+							Дата выезда:
+							<input class="departure-date" type="date" name="departure-date">
+						</label>
+					</p>
+					<p class="search-item">
+						<label>
+							Взрослые:
+							<input class="adults-number" type="number" name="adults-number">
+						</label>
+					</p>
+					<p class="search-item">
+						<label>
+							Дети:
+							<input class="children-number" type="number" name="children-number">
+						</label>
+					</p>
+					<button class="button" type="submit">Найти</button>
+				</form>
 	  		</section>
 
 			<section class="map">
