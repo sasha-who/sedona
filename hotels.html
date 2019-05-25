@@ -24,7 +24,38 @@
         <h1 class="visually-hidden">Поиск гостиниц</h1>
         <section class="hotels-filter">
           <h2 class="visually-hidden">Фильтр выбора жилья</h2>
-            <!-- Здесь будет форма выбора гостиниц -->
+          <form action="#">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <label>
+                <input class="checkbox-field" type="checkbox" name="pool" checked>
+                Бассейн
+              </label>
+              <label>
+                <input class="checkbox-field" type="checkbox" name="parking">
+                Парковка
+              </label>
+              <label>
+                <input class="checkbox-field" type="checkbox" name="wi-fi">
+                Wi-Fi
+              </label>        
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <label>
+                <input class="checkbox-field" type="checkbox" name="hotel" checked>
+                Гостиница
+              </label>
+              <label>
+                <input class="checkbox-field" type="checkbox" name="motel" checked>
+                Мотель
+              </label>
+              <label>
+                <input class="checkbox-field" type="checkbox" name="apartments" checked>
+                Апартаменты
+              </label>
+            </fieldset>
+          </form>
           <p class="price">
             <span>Стоимость в сутки (Р):</span>
             <span>от 0</span>
