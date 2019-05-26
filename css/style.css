@@ -40,6 +40,10 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.navigation-item-current {
+	color: #766357;
+}
+
 .introduction .main-picture {
 	background-color: #687d8c;
 }
