@@ -39,3 +39,24 @@ a {
 .navigation-items a:focus {
 	color: rgba(0, 0, 0, 0.3);
 }
+
+.introduction .main-picture {
+	background-color: #687d8c;
+}
+
+.introduction .description {
+	color: #000000;
+	font-size: 21px;
+	text-align: center;
+
+	background-color: #ffffff;
+}
+
+.introduction .why-better {
+	color: #000000;
+	font-weight: 400;
+	text-align: center;
+
+	background-color: #ffffff;	
+}
+
