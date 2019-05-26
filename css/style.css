@@ -77,6 +77,7 @@ a {
 }
 
 .search-button {
+	font: inherit;
 	color: #ffffff;
 	font-size: 21px;
 	line-height: 26px;
@@ -94,6 +95,12 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #503e33;
+}
+
+.search-form {
+	color: #000000;
+
+	background-color: #ffffff;
 }
 
 .search-form input {
@@ -137,3 +144,54 @@ a {
 	background-color: #5496bd;
 }
 
+.site-footer {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.site-footer .hashteg {
+	font-size: 21px;
+	color: #000000;
+}
+
+.site-footer .social-icons {
+	list-style: none;
+}
+
+.site-footer .social-button {
+	background-color: #81b3d2;
+}
+
+.site-footer .social-button:hover {
+	background-color: #669ec0;
+}
+
+/*При фокусе не работает, не понимаю почему*/
+.site-footer .social-button:focus {
+	background-color: #5496bd;
+	opacity: 0.3;
+}
+
+.site-footer .twitter-button {
+	background-image: url("../img/twitter-icon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.site-footer .facebook-button {
+	background-image: url("../img/fb-icon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.site-footer .youtube-button {
+	background-image: url("../img/youtube-icon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.site-footer .copyright {
+	font-weight: 400;
+	color: #000000;
+}
