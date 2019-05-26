@@ -53,10 +53,87 @@ a {
 }
 
 .introduction .why-better {
-	color: #000000;
+	color: #333333;
 	font-weight: 400;
 	text-align: center;
 
 	background-color: #ffffff;	
+}
+
+.hotel-search .interest {
+	color: #333333;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+
+	background-color: #ffffff;	
+}
+
+.interest span {
+	color: #000000;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.search-button {
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #766357;
+}
+
+.search-button:hover {
+	background-color: #604e43;
+}
+
+.search-button:focus {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #503e33;
+}
+
+.search-form input {
+	font: inherit;
+	/*Почему-то цвет текста не меняется. Его как-то к плейсхолдеру надо применить?*/
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.search-form input:hover {
+	background-color: #ebebeb;
+}
+
+.search-form input:focus {
+	background-color: #ffffff;
+	/*Не получилось изменить цвет обводки*/
+	border: 2px solid #e5e5e5;
+}
+
+.search-form .find-button {
+	font: inherit;
+	font-size: 21px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #81b3d2;
+	border: none;
+}
+
+.search-form .find-button:hover {
+	background-color: #669ec0;
+}
+
+.search-form .find-button:focus {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #5496bd;
 }
 
