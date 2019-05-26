@@ -114,7 +114,8 @@ a {
 
 .search-form input {
 	font: inherit;
-	/*Почему-то цвет текста не меняется. Его как-то к плейсхолдеру надо применить?*/
+	/*Почему-то цвет текста не меняется. 
+	Его как-то к плейсхолдеру надо применить через селектор по атрибуту?*/
 	color: #000000;
 	text-transform: uppercase;
 
@@ -254,39 +255,38 @@ a {
 	list-style: none;
 }
 
-.site-footer .social-button {
+.social-button a {
 	background-color: #81b3d2;
 }
 
-.site-footer .social-button:hover {
+.social-button a:hover {
 	background-color: #669ec0;
 }
 
-/*При фокусе не работает, не понимаю почему*/
-.site-footer .social-button:focus {
+.social-button a:focus {
 	background-color: #5496bd;
 	opacity: 0.3;
 }
 
-.site-footer .twitter-button {
+.twitter-button {
 	background-image: url("../img/twitter-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.site-footer .facebook-button {
+.facebook-button {
 	background-image: url("../img/fb-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.site-footer .youtube-button {
+.youtube-button {
 	background-image: url("../img/youtube-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.site-footer .copyright {
+.copyright {
 	font-weight: 400;
 	color: #000000;
 }
