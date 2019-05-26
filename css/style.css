@@ -16,6 +16,8 @@ a {
 	text-decoration: none;
 }
 
+/*Общий хедер*/
+
 .main-navigation {
 	font-size: 14px;
 	line-height: 26px;
@@ -43,6 +45,8 @@ a {
 .navigation-item-current a {
 	color: #766357;
 }
+
+/*index.html*/
 
 .introduction .main-picture {
 	background-color: #687d8c;
@@ -124,8 +128,8 @@ a {
 
 .search-form input:focus {
 	background-color: #ffffff;
-	/*Не получилось изменить цвет обводки*/
 	border: 2px solid #e5e5e5;
+	outline: none;
 }
 
 .search-form .find-button {
@@ -148,6 +152,92 @@ a {
 
 	background-color: #5496bd;
 }
+
+/*hotels.html*/
+
+.search-result {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.hotels-list {
+	list-style: none;
+}
+
+.hotel-name a {
+	font-size: 21px;
+	color: #000000;
+}
+
+.hotel-name a:hover {
+	color: #81b3d2;
+}
+
+.hotel-name a:focus {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.hotels-list-items .hotel-amara {
+	background-color: #7d3945;
+}
+
+.hotels-list-items .hotel-desert {
+	background-color: #9e898b;
+}
+
+.hotels-list-items .hotel-villas {
+	background-color: #73874b;
+}
+
+.hotel-category, 
+.hotel-price {
+	font-weight: 400;
+	color: #333333;
+}
+
+.hotel-rating {
+	font-weight: 400;
+	color: #666666;
+
+	background-color: #f2f2f2;
+}
+
+.hotel-buttons a {
+	font: inherit;
+	color: #ffffff;
+	text-align: center;
+}
+
+.detail-button {
+	background-color: #81b3d2;
+}
+
+.detail-button:hover {
+	background-color: #669ec0;
+}
+
+.detail-button:focus {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #5496bd;
+}
+
+.book-button {
+	background-color: #766357;
+}
+
+.book-button:hover {
+	background-color: #604e43;
+}
+
+.book-button:focus {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #503e33;
+}
+
+/*Общий футер*/
 
 .site-footer {
 	color: #000000;
