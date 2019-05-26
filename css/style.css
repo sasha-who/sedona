@@ -263,30 +263,31 @@ a {
 	background-color: #669ec0;
 }
 
+/*Как-то вот здесь не так работает всё*/
 .social-button a:focus {
 	background-color: #5496bd;
 	opacity: 0.3;
 }
 
-.twitter-button {
+.twitter-button a {
 	background-image: url("../img/twitter-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.facebook-button {
+.facebook-button a {
 	background-image: url("../img/fb-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.youtube-button {
+.youtube-button a {
 	background-image: url("../img/youtube-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.copyright {
+.site-footer .copyright {
 	font-weight: 400;
 	color: #000000;
 }
