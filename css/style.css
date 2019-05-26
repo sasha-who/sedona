@@ -1,0 +1,11 @@
+body {
+	padding: 0;
+	margin: 0;
+
+	font-family: "PT Sans", Times New Roman, serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 26px;
+	color:#000000;
+	text-transform: uppercase;
+}
