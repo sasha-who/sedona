@@ -6,7 +6,7 @@ body {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 26px;
-	color:#000000;
+	color: #000000;
 	text-transform: uppercase;
 
 	background-color: #ffffff;
@@ -14,4 +14,28 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.navigation-items {
+	list-style: none;
+}
+
+.navigation-items a {
+	color: #000000;
+}
+
+.navigation-items a:hover {
+	color: #81b3d2;
+}
+
+.navigation-items a:focus {
+	color: rgba(0, 0, 0, 0.3);
 }
