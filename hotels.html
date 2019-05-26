@@ -73,15 +73,26 @@
                 </li>
               </ul>
             </fieldset>
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+              <ul class="price">
+                <li class="price-item">
+                  <label>
+                    От 
+                    <input type="number" name="price-from">
+                  </label>
+                </li>
+                <li class="price-item">
+                  <label>
+                    До
+                    <input type="number" name="price-to">
+                  </label>
+                </li>
+              </ul>
+              <!-- Здесь будет ползунок -->
+            </fieldset>
+            <button class="result-button">Показать</button>
           </form>
-          <p class="price">
-            <span>Стоимость в сутки (Р):</span>
-            <!-- Вот эти спаны дожны быть input, наверное -->
-            <span>от 0</span>
-            <span>до 3000</span>
-            <!-- Здесь будет ползунок -->
-          </p>
-          <button class="result-button">Показать</button>
         </section>
 
         <section class="search-result">
