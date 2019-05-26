@@ -40,7 +40,7 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.navigation-item-current {
+.navigation-item-current a {
 	color: #766357;
 }
 
