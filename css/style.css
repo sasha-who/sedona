@@ -26,19 +26,19 @@ a {
 	background-color: #ffffff;
 }
 
-.navigation-items {
+.navigation-list {
 	list-style: none;
 }
 
-.navigation-items a {
+.navigation-list a {
 	color: #000000;
 }
 
-.navigation-items a:hover {
+.navigation-list a:hover {
 	color: #81b3d2;
 }
 
-.navigation-items a:focus {
+.navigation-list a:focus {
 	color: rgba(0, 0, 0, 0.3);
 }
 
