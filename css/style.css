@@ -81,6 +81,68 @@ a {
 	background-color: #ffffff;	
 }
 
+.reasons .reasons-list, 
+.reasons-list .comfort {
+	list-style: none;
+}
+
+.reasons .reason-image {
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.reasons .reason-no-image {
+	color: #000000;
+
+	background-color: #eeeeee;
+}
+
+.reason-item .reason-title {
+	font-size: 21px;
+	text-align: center;
+}
+
+.reason-item .reason-description {
+	font-weight: 400;
+	text-align: center;
+}
+
+.reasons-list .comfort {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.comfort h3 {
+	font-size: 21px;
+	text-align: center;
+}
+
+.comfort p {
+	font-weight: 400;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hotel-search .interest {
 	color: #333333;
 	font-weight: 400;
