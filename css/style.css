@@ -94,6 +94,10 @@ a {
 	background-color: #687d8c;
 }
 
+.main-picture .main-photo {
+	display: block;
+}
+
 .introduction .description-wrapper {
 	width: 500px;
 	min-height: 100px;
