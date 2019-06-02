@@ -9,12 +9,12 @@
 	</head>
 	<body>
 	  	<div class="main-container">
-		  	<header class="site-header">
+		  	<header class="site-header container">
 		  		<nav class="main-navigation">
-			  		<a class="main-logo">
+<!-- 			  <a class="main-logo">
 			  			<img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип сайта города Седона">
 			  		</a>  			
-			  		<ul class="navigation-list">
+ -->			  		<ul class="navigation-list">
 		  				<li class="navigation-item">
 		  					<a href="#">Информация</a>
 		  				</li>
@@ -31,16 +31,18 @@
 		  		</nav>
 		  	</header>
 
-		  	<main class="container">
+		  	<main>
 		  		<h1 class="visually-hidden">Город Седона</h1>
 		  		<section class="introduction">
 		  			<h2 class="visually-hidden">Добро пожаловать в Седону</h2>
 		  			<p class="main-picture">
 		  				<img class="main-photo" src="img/background-photo.jpg" width="1200" height="773" alt="Фото города Седона">
-		  				<img class="photo-title" src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+		  				<!-- <img class="photo-title" src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону"> -->
 		  			</p>
-		  			<p class="description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-		  			<p class="why-better">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+		  			<div class="description-wrapper container">
+			  			<p class="description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+			  			<p class="why-better">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			  		</div>
 		  		</section>
 
 		  		<section class="reasons">
@@ -88,9 +90,10 @@
 		  		<section class="hotel-search">
 		  			<h2 class="visually-hidden">Форма поиска гостиниц в Седоне</h2>
 		  			<p class="interest"><span>Заинтересовались?</span><br>
-		  			Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+		  			Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 						<button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
-						<form class="search-form" action="#" method="post">
+					</div>
+<!-- 						<form class="search-form" action="#" method="post">
 							<p class="search-item">
 								<label>
 									Дата заезда:
@@ -116,16 +119,16 @@
 								</label>
 							</p>
 							<button class="button find-button" type="submit">Найти</button>
-						</form>
+						</form> -->
 		  		</section>
 
-				<section class="map">
+				<section class="map container">
 					<h2 class="visually-hidden">Местоположение Седоны на карте</h2>
 					<!-- Здесь будет карта -->
 				</section>
-		  	</main>
+		  </main>
 
-			<footer class="site-footer">
+			<footer class="site-footer container">
 				<p class="hashteg">#visitSedona</p>
 				<ul class="social-icons">
 					<li class="social-button twitter-button">
