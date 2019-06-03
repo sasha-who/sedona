@@ -86,55 +86,61 @@ a {
 /*index.html*/
 
 .introduction {
-	min-height: 773px;
-	margin-bottom: 55px;
+	width: 1200px;
+	min-height: 510px;
 
+	background-image: url("../img/background-photo.jpg");
+	background-position: 0 -83px;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-color: #687d8c;
 }
 
-.main-picture .main-photo {
+.introduction .photo-title {
 	display: block;
-}
-
-.introduction .description-wrapper {
-	width: 1100px;
-	min-height: 100px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.introduction .description {
-	margin: 0;
-	padding: 0;
-
-	color: #000000;
-	font-size: 21px;
-	text-align: center;
-
-	background-color: #ffffff;
-}
-
-.introduction .why-better {
-	margin: 0;
-	margin-top: 27px;
-	margin-bottom: 55px;
-	padding: 0;
-
-	color: #333333;
-	font-weight: 400;
-	text-align: center;
-
-	background-color: #ffffff;	
+	margin: 0 auto;
+	padding-top: 75px;
 }
 
 .reasons {
-	margin-bottom: 49px;
+	min-height: 1312px;
 
 	line-height: 21px;
 }
 
+.reasons .description-wrapper {
+	width: 1200px;
+	min-height: 215px;
+	text-align: center;
+}
+
+.reasons .description {
+	margin: 0;
+	padding: 0;
+	padding-top: 58px;
+
+	color: #000000;
+	font-size: 21px;
+	line-height: 26px;
+
+	background-color: #ffffff;
+}
+
+.reasons .why-better {
+	margin: 0;
+	padding: 0;
+	padding-top: 30px;
+
+	color: #333333;
+	font-weight: 400;
+
+	background-color: #ffffff;	
+}
+
 .reasons .reasons-list, 
 .reasons-list .comfort {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -151,6 +157,8 @@ a {
 }
 
 .reason-item .reason-title {
+	margin: 0;
+	padding: 0;
 	font-size: 21px;
 	text-align: center;
 }
@@ -176,25 +184,27 @@ a {
 	text-align: center;
 }
 
+.hotel-search {
+	min-height: 290px;
+
+	text-align: center;
+}
+
 .hotel-search .interest {
-	width: 460px;
 	min-height: 95px;
-	margin: 0 auto;
-	margin-bottom: 47px;
+	margin: 0;
 	padding: 0;
+	padding-top: 50px;
 
 	color: #333333;
 	font-weight: 400;
 	line-height: 24px;
-	text-align: center;
 
 	background-color: #ffffff;	
 }
 
 .interest span {
 	display: block;
-	margin: 0;
-	padding: 0;
 
 	color: #000000;
 	font-size: 30px;
@@ -204,16 +214,16 @@ a {
 
 .search-button {
 	display: block;
-	width: 567px;
-	min-height: 85px;
+	width: 568px;
+	min-height: 86px;
 	margin: 0 auto;
+	margin-top: 47px;
 
 	font: inherit;
 	color: #ffffff;
 	font-size: 21px;
 	line-height: 26px;
 	text-transform: uppercase;
-	text-align: center;
 
 	background-color: #766357;
 	border: none;
@@ -454,7 +464,7 @@ a {
 
 .site-footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	color: #000000;
 
 	background-color: #ffffff;
@@ -464,9 +474,8 @@ a {
 	width: 240px;
 	min-height: 120px;
 	margin: 0;
-	margin-left: 62px;
-	padding: 0;
-	padding-top: 46px;
+	margin-right: 40px;
+	padding-top: 47px;
 
 	font-size: 21px;
 	color: #000000;
@@ -474,9 +483,10 @@ a {
 }
 
 .site-footer .social-icons {
-	width: 220px;
-	min-height: 65px;
+	width: 240px;
+	min-height: 120px;
 	margin: 0;
+	padding: 0;
 
 	list-style: none;
 }
@@ -489,7 +499,6 @@ a {
 	background-color: #669ec0;
 }
 
-/*Как-то вот здесь не так работает всё*/
 .social-button a:focus {
 	background-color: #5496bd;
 	opacity: 0.3;
@@ -514,14 +523,23 @@ a {
 }
 
 .site-footer .copyright {
-	width: 220px;
-	min-height: 12px;
+	display: flex;
+	width: 240px;
+	min-height: 120px;
 	margin: 0;
-	margin-right: 62px;
-	padding: 0;
-	padding-top: 37px;
+	padding-top: 40px;
+
 
 	font-weight: 400;
 	color: #000000;
+}
+
+.copyright span {
+	padding-top: 7px;
+	margin-left: 23px;
+}
+
+.copyright .copyright-logo {
+	margin-left: 9px;
 }
 
