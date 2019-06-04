@@ -7,14 +7,14 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="hotel-page">
     <div class="main-container">
     	<header class="site-header">
     		<nav class="main-navigation">
-  	  		<a class="main-logo" href="index.html">
+<!--   	  		<a class="main-logo" href="index.html">
   	  			<img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип сайта города Седона">
   	  		</a>  			
-  	  		<ul class="navigation-list">
+ -->  	  		<ul class="navigation-list">
     				<li><a href="#">Информация</a></li>
     				<li><a href="#">Фото и видео</a></li>
     				<li><a href="#">Карта штата</a></li>
@@ -23,7 +23,7 @@
     		</nav>
     	</header>
 
-      <main class="container">
+      <main>
         <h1 class="visually-hidden">Поиск гостиниц</h1>
         <section class="hotels-filter">
           <h2 class="visually-hidden">Фильтр выбора жилья</h2>
@@ -96,7 +96,7 @@
           </form>
         </section>
 
-        <section class="search-result">
+        <section class="search-result container">
           <h2 class="visually-hidden">Список вариантов гостиниц</h2>
           <div class="sorting">
             <p class="sorting-find">Найдено: 3</p>
@@ -108,38 +108,50 @@
             </ul>
           </div>
           <ul class="hotels-list">
-            <li class="hotels-list-items">
-              <h3 class="hotel-name"><a href="#">Amara Resort & Spa</a></h3>
-              <img class="hotel-amara" src="img/hotel-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
-              <p class="hotel-category">Гостиница</p>
-              <p class="hotel-price">От 4000 р.</p>
+            <li class="hotels-item">
+              <div class="hotel-flex-wrapper">
+                <h3 class="hotel-name"><a href="#">Amara Resort & Spa</a></h3>
+                <p class="hotel-status">
+                  <span class="hotel-category">Гостиница</span>
+                  <span class="hotel-price">От 4000 р.</span>
+                </p>
+                <p class="hotel-buttons">
+                  <a class="detail-button" href="#">Подробнее</a>
+                  <a class="book-button" href="#">Забронировать</a>
+                </p>
+              </div>
+              <img class="hotel-amara" src="img/hotel-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">              
               <p class="hotel-rating">Рейтинг: 8,5</p>
-              <p class="hotel-buttons">
-                <a class="detail-button" href="#">Подробнее</a>
-                <a class="book-button" href="#">Забронировать</a>
-              </p>
             </li>
-            <li class="hotels-list-items">
-              <h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
+            <li class="hotels-item">
+              <div class="hotel-flex-wrapper">
+                <h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
+                <p class="hotel-status">
+                  <span class="hotel-category">Мотель</span>
+                  <span class="hotel-price">От 3000 р.</span>
+                </p>
+                <p class="hotel-buttons">
+                  <a class="detail-button" href="#">Подробнее</a>
+                  <a class="book-button" href="#">Забронировать</a>
+                </p>
+              </div>
               <img class="hotel-desert" src="img/hotel-desert.jpg" width="135" height="90" alt="Гостиница Desert Quail Inn">
-              <p class="hotel-category">Мотель</p>
-              <p class="hotel-price">От 3000 р.</p>
               <p class="hotel-rating">Рейтинг: 8,9</p>
-              <p class="hotel-buttons">
-                <a class="detail-button" href="#">Подробнее</a>
-                <a class="book-button" href="#">Забронировать</a>
-              </p>
             </li>
-            <li class="hotels-list-items">
-              <h3 class="hotel-name"><a href="#">Villas at Poco Diablo</a></h3>
+            <li class="hotels-item">
+              <div class="hotel-flex-wrapper">              
+                <h3 class="hotel-name"><a href="#">Villas at Poco Diablo</a></h3>
+                <p class="hotel-status">
+                  <span class="hotel-category">Апартаменты</span>
+                  <span class="hotel-price">От 2000 р.</span>
+                </p>
+                <p class="hotel-buttons">
+                  <a class="detail-button" href="#">Подробнее</a>
+                  <a class="book-button" href="#">Забронировать</a>
+                </p>
+              </div>
               <img class="hotel-villas" src="img/hotel-villas.jpg" width="135" height="90" alt="Гостиница Villas at Poco Diablo">
-              <p class="hotel-category">Апартаменты</p>
-              <p class="hotel-price">От 2000 р.</p>
               <p class="hotel-rating">Рейтинг: 9,2</p>
-              <p class="hotel-buttons">
-                <a class="detail-button" href="#">Подробнее</a>
-                <a class="book-button" href="#">Забронировать</a>
-              </p>
             </li>
           </ul>
         </section>

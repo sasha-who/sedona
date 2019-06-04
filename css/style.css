@@ -4,6 +4,12 @@ body {
 	min-height: 2762px;
 }
 
+/*Хотела убрать лишнюю высоту у всей страницы,
+там куча места после футера, но не работает*/
+body.hotel-page {
+	min-height: 933px;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -295,18 +301,31 @@ a {
 /*hotels.html*/
 
 .hotels-filter {
+	min-height: 217px;
+
 	color: #ffffff;
 	line-height: 21px;
 
 	background-color: #657a8a;
 	background-image: url("../img/filter-background.jpg");
+	background-position: 0 -294px;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .hotels-filter ul {
 	list-style: none;
 }
 
+.filter-form {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .filter-form fieldset {
+	width: 240px;
+
 	border: none;
 }
 
@@ -336,12 +355,19 @@ a {
 }
 
 .search-result {
+	min-height: 453px;
+
 	color: #000000;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
 
 	background-color: #ffffff;
+}
+
+.search-result .sorting {
+	display: flex;
+	justify-content: space-around;
 }
 
 .sorting .sorting-find {
@@ -388,6 +414,16 @@ a {
 	list-style: none;
 }
 
+.hotels-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.hotels-item img {
+	order: -1;
+}
+
 .hotel-name a {
 	font-size: 21px;
 	color: #000000;
@@ -401,20 +437,23 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.hotels-list-items .hotel-amara {
+.hotels-item .hotel-amara {
 	background-color: #7d3945;
 }
 
-.hotels-list-items .hotel-desert {
+.hotels-item .hotel-desert {
 	background-color: #9e898b;
 }
 
-.hotels-list-items .hotel-villas {
+.hotels-item .hotel-villas {
 	background-color: #73874b;
 }
 
-.hotel-category, 
-.hotel-price {
+.hotel-status {
+	display: flex;
+	flex-direction: column;
+
+
 	font-weight: 400;
 	color: #333333;
 }
