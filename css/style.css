@@ -150,7 +150,10 @@ a {
 	list-style: none;
 }
 
-.reasons .reason-image {
+.reasons-list .reason-image {
+	display: flex;
+	min-height: 256px;
+
 	color: #ffffff;
 
 	background-color: #81b3d2;
