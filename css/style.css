@@ -28,11 +28,6 @@ a {
 	text-decoration: none;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -75,6 +70,7 @@ input[type="radio"].visually-hidden {
 
 .navigation-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	min-height: 56px;
 	padding: 0;
@@ -227,16 +223,24 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 }
 
-.comfort li {
-	width: 200px;
+.comfort .comfort-item {
+	width: 400px;
+	padding: 10px;
 }
 
 .comfort h3 {
+	margin: 0;
+	margin-top: 77px;
+	margin-bottom: 24px;
+
 	font-size: 21px;
 	text-align: center;
 }
 
 .comfort p {
+	margin: 0;
+	margin-top: 0px;
+
 	font-weight: 400;
 	text-align: center;
 }
