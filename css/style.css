@@ -233,20 +233,32 @@ input[type="radio"].visually-hidden {
 	background-color: #eeeeee;
 }
 
+.reason-description {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
 .reason-item p {
 	margin: 0;
 }
 
-.reason-item .reason-title {
-	margin: 0;
-	padding: 0;
+.reason-item h3 {
+	margin-top: 47px;
+	margin-bottom: 24px;
+
 	font-size: 21px;
 	text-align: center;
 }
 
-.reason-item .reason-description {
+.reason-description p {
 	font-weight: 400;
 	text-align: center;
+}
+
+.reason-description span {
+	display: block;
+	margin-bottom: 21px;
 }
 
 .reasons-list .comfort {
