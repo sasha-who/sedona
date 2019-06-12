@@ -61,6 +61,8 @@ input[type="radio"].visually-hidden {
 /*Общий хедер*/
 
 .main-navigation {
+	position: relative;
+
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
@@ -68,15 +70,50 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 }
 
-.navigation-list {
+.main-navigation .main-logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -70px;
+}
+
+.main-navigation .navigation-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
+	align-items: center;
 	min-height: 56px;
 	padding: 0;
 	margin: 0;
 
 	list-style: none;
+}
+
+.navigation-list .navigation-item {
+	width: 239px;
+
+	text-align: center;
+}
+
+/*Выравнивание пунктов меню*/
+
+.navigation-list .navigation-item:nth-child(3) {
+	margin-left: 220px;
+}
+
+.navigation-item:first-child a {
+	margin-left: -22px;
+}
+
+.navigation-item:nth-child(2) a {
+	margin-right: 14px;
+}
+
+.navigation-item:nth-child(3) a {
+	margin-left: 28px;
+}
+
+.navigation-item:last-child a {
+	margin-left: 43px;
 }
 
 .navigation-list a {
