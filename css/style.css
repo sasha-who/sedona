@@ -73,6 +73,7 @@ input[type="radio"].visually-hidden {
 .main-navigation .main-logo {
 	position: absolute;
 	left: 50%;
+
 	margin-left: -70px;
 }
 
@@ -163,6 +164,7 @@ input[type="radio"].visually-hidden {
 .reasons .description-wrapper {
 	width: 1200px;
 	min-height: 215px;
+
 	text-align: center;
 }
 
@@ -193,6 +195,7 @@ input[type="radio"].visually-hidden {
 .reasons-list .comfort {
 	margin: 0;
 	padding: 0;
+
 	list-style: none;
 }
 
@@ -255,13 +258,15 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	text-align: center;
 }
-
+	
 .reason-description span {
 	display: block;
 	margin-bottom: 21px;
 }
 
 .reasons-list .comfort {
+	position: relative;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -275,6 +280,45 @@ input[type="radio"].visually-hidden {
 .comfort .comfort-item {
 	width: 400px;
 	padding: 10px;
+}
+
+.comfort .comfort-house::before {
+	content: "";
+
+	position: absolute;
+	top: 60px;
+	left: 162px;
+
+	width: 75px;
+	height: 72px;
+	background-image: url("../img/icon-house.svg");
+	background-repeat: no-repeat;
+}
+
+.comfort .comfort-food::before {
+	content: "";
+
+	position: absolute;
+	top: 61px;
+	left: 563px;
+
+	width: 74px;
+	height: 70px;
+	background-image: url("../img/icon-food.svg");
+	background-repeat: no-repeat;
+}
+
+.comfort .comfort-souvenirs::before {
+	content: "";
+
+	position: absolute;
+	top: 56px;
+	right: 168px;
+
+	width: 64px;
+	height: 76px;
+	background-image: url("../img/icon-souvenirs.svg");
+	background-repeat: no-repeat;
 }
 
 .comfort h3 {
