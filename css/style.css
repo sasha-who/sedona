@@ -136,11 +136,11 @@ input[type="radio"].visually-hidden {
 
 .introduction {
 	width: 1200px;
-	min-height: 510px;
+	min-height: 509px;
 
-	background-image: url("../img/background-photo.jpg");
-	background-position: 0 -83px;
-	background-size: cover;
+	background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
+	background-position: 0 452px, 0 -83px;
+	background-size: contain, cover;
 	background-repeat: no-repeat;
 	background-color: #687d8c;
 }
@@ -169,7 +169,7 @@ input[type="radio"].visually-hidden {
 .reasons .description {
 	margin: 0;
 	padding: 0;
-	padding-top: 58px;
+	padding-top: 59px;
 
 	color: #000000;
 	font-size: 21px;
