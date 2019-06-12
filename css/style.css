@@ -651,7 +651,7 @@ input[type="radio"].visually-hidden {
 
 .site-footer {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	color: #000000;
 
 	background-color: #ffffff;
@@ -661,7 +661,7 @@ input[type="radio"].visually-hidden {
 	width: 240px;
 	min-height: 120px;
 	margin: 0;
-	margin-right: 40px;
+	margin-left: 70px;
 	padding-top: 47px;
 
 	font-size: 21px;
@@ -670,43 +670,34 @@ input[type="radio"].visually-hidden {
 }
 
 .site-footer .social-icons {
-	width: 240px;
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
 	min-height: 120px;
 	margin: 0;
 	padding: 0;
+	padding-top: 37px;
 
 	list-style: none;
 }
 
-.social-button a {
+.social-icons .social-button {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 46px;
+	height: 48px;
+
 	background-color: #81b3d2;
 }
 
-.social-button a:hover {
+.social-button:hover {
 	background-color: #669ec0;
 }
 
-.social-button a:focus {
-	background-color: #5496bd;
-	opacity: 0.3;
-}
-
-.twitter-button a {
-	background-image: url("../img/twitter-icon.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.facebook-button a {
-	background-image: url("../img/fb-icon.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.youtube-button a {
-	background-image: url("../img/youtube-icon.svg");
-	background-repeat: no-repeat;
-	background-position: center;
+.social-button:focus path {
+	fill: rgba(255, 255, 255, 0.3);
 }
 
 .site-footer .copyright {
@@ -714,6 +705,7 @@ input[type="radio"].visually-hidden {
 	width: 240px;
 	min-height: 120px;
 	margin: 0;
+	margin-right: 71px;
 	padding-top: 40px;
 
 
