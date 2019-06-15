@@ -1,5 +1,5 @@
 body {
-	min-width: 1280px;
+	min-width: 1200px;
 	min-height: 2762px;	
 	padding: 0;
 	margin: 0;
@@ -569,7 +569,13 @@ input[type="radio"].visually-hidden {
 
 .search-result .sorting {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 86px;
+	padding-left: 72px;
+	padding-right: 73px;
+
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .sorting .sorting-find {
@@ -578,11 +584,66 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 }
 
+.sorting .sorting-type {
+	margin-top: 15px;
+	margin-left: 48px;
+}
+
 .sorting .sorting-variants {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+
 	list-style: none;
 }
 
+/*Стрелки-указатели типа сортировки*/
+.sorting .sorting-buttons {
+	position: relative;
+}
+
+.sorting-buttons .button-up, 
+.sorting-buttons .button-down {
+	position: absolute;
+
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+}
+
+.sorting-buttons .button-up {
+	top: -3px;
+	left: 470px;
+
+	border-bottom: 10px solid #cacaca;
+}
+
+.sorting-buttons .button-down {
+	top: -4px;
+	left: 493px;
+
+	border-top: 10px solid #cacaca;
+}
+
+.sorting-buttons .button-up:hover {
+	border-bottom-color: #000000;
+}
+
+.sorting-buttons .button-down:hover {
+	border-top-color: #000000;
+}
+
+.sorting-buttons .button-up:focus {
+	border-bottom-color: #81b3d2;
+}
+
+.sorting-buttons .button-down:focus {
+	border-top-color: #81b3d2;
+}
+
 .sorting-variants a {
+	margin-right: 33px;
 	border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
 
 	color: rgba(0, 0, 0, 0.3);

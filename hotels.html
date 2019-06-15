@@ -10,26 +10,27 @@
   <body class="hotel-page">
     <div class="main-container">
     	<header class="site-header">
-    		<nav class="main-navigation">
-  	  		<a class="main-logo" href="index.html">
-  	  			<img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип сайта города Седона">
-  	  		</a>  			
-  	  		<ul class="navigation-list">
-    				<li class="navigation-item">
-              <a href="#">Информация</a>
-            </li>
-    				<li class="navigation-item">
-              <a href="#">Фото и видео</a>
-            </li>
-    				<li class="navigation-item">
-              <a href="#">Карта штата</a>
-            </li>
-    				<li class="navigation-item navigation-item-current"><a href="hotels.html">Гостиницы</a>
-            </li>
-    			</ul>
-    		</nav>
-    	</header>
-
+          <nav class="main-navigation">
+            <a class="main-logo">
+              <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип сайта города Седона">
+            </a>        
+            <!-- При переполнении пункты меню не выстраиваются хорошо, а ещё залезают под лого. Как сделать, чтобы на его месте никто не мог стоять в потоке? -->
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a href="#">Информация</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#">Фото и видео</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#">Карта штата</a>
+              </li>
+              <li class="navigation-item">
+                <a href="hotels.html">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
       <main>
         <h1 class="visually-hidden">Поиск гостиниц</h1>
         <section class="hotels-filter">
@@ -103,7 +104,7 @@
           </form>
         </section>
 
-        <section class="search-result container">
+        <section class="search-result">
           <h2 class="visually-hidden">Список вариантов гостиниц</h2>
           <div class="sorting">
             <p class="sorting-find">Найдено: 3</p>
@@ -113,6 +114,10 @@
               <li><a href="#">По типу</a></li>
               <li><a href="#">По рейтингу</a></li>
             </ul>
+            <div class="sorting-buttons">
+              <a class="button-up" href="#"></a>
+              <a class="button-down" href="#" ></a>
+            </div>
           </div>
           <ul class="hotels-list">
             <li class="hotels-item">
