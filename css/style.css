@@ -6,6 +6,7 @@ body {
 
 /*Хотела убрать лишнюю высоту у всей страницы,
 там куча места после футера, но не работает*/
+html.hotel-page, 
 body.hotel-page {
 	min-height: 933px;
 }
@@ -458,6 +459,20 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 }
 
+/*Не работает, потому что не понимаю, кого из родителей
+как нужно спозиционировать*/
+.half-width-wrapper input::before,
+.half-width-wrapper input::after {
+	content: "";
+
+	position: absolute;
+
+	width: 12px;
+	height: 3px;
+
+	background-color: rgba(0, 0, 0, 0.3);
+} 
+
 .half-width-wrapper .children-number {
 	margin-left: 20px;
 }
@@ -766,6 +781,8 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright .copyright-logo {
+	width: 115px;
+	height: 41px;
 	margin-left: 9px;
 }
 
