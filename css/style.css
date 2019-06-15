@@ -399,17 +399,24 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	left: 50%;
 
-	width: 458px;
-	min-height: 285px;
+	width: 456px;
+	min-height: 313px;
 	margin-left: -284px;
-	padding: 55px;
+	padding: 41px 56px;
 
 	color: #000000;
 
 	background-color: #ffffff;
 }
 
-.search-form input {
+.search-item input {
+	box-sizing: border-box;
+	width: 346px;
+	height: 38px;
+	margin-left: 18px;
+	padding: 13px;
+	padding-right: 90px;
+
 	font: inherit;
 	/*Почему-то цвет текста не меняется. 
 	Его как-то к плейсхолдеру надо применить через селектор по атрибуту?*/
@@ -420,17 +427,46 @@ input[type="radio"].visually-hidden {
 	border: none;
 }
 
-.search-form input:hover {
+.search-item input:hover {
 	background-color: #ebebeb;
 }
 
-.search-form input:focus {
+.search-item input:focus {
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 	outline: none;
 }
 
+.search-item .departure-date {
+	margin-left: 14px;
+	margin-top: 15px;
+}
+
+.half-width-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.half-width-wrapper input {
+	width: 114px;
+	margin-top: 2px;
+	margin-left: 35px;
+	padding: 0;
+	padding-left: 38px;
+	padding-right: 38px;
+	text-align: center;
+}
+
+.half-width-wrapper .children-number {
+	margin-left: 20px;
+}
+
 .search-form .find-button {
+	width: 100%;
+	min-height: 58px;
+	margin-top: 40px;
+
 	font: inherit;
 	font-size: 21px;
 	color: #ffffff;
@@ -710,6 +746,7 @@ input[type="radio"].visually-hidden {
 	fill: rgba(255, 255, 255, 0.3);
 }
 
+/*Сделать через svg*/
 .site-footer .copyright {
 	display: flex;
 	width: 240px;
