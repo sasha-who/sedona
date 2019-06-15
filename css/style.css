@@ -1,17 +1,6 @@
-html,
 body {
 	min-width: 1280px;
-	min-height: 2762px;
-}
-
-/*Хотела убрать лишнюю высоту у всей страницы,
-там куча места после футера, но не работает*/
-html.hotel-page, 
-body.hotel-page {
-	min-height: 933px;
-}
-
-body {
+	min-height: 2762px;	
 	padding: 0;
 	margin: 0;
 
@@ -23,6 +12,10 @@ body {
 	text-transform: uppercase;
 
 	background-color: #ffffff;
+}
+
+body.hotel-page {
+	min-height: 933px;
 }
 
 a {
