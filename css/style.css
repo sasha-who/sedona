@@ -569,7 +569,7 @@ input[type="radio"].visually-hidden {
 
 .search-result .sorting {
 	display: flex;
-	justify-content: flex-start;
+	flex-wrap: wrap;
 	align-items: center;
 	min-height: 86px;
 	padding-left: 72px;
@@ -592,54 +592,10 @@ input[type="radio"].visually-hidden {
 .sorting .sorting-variants {
 	display: flex;
 	flex-wrap: wrap;
+	flex-grow: 1;
 	margin-top: 15px;
 
 	list-style: none;
-}
-
-/*Стрелки-указатели типа сортировки*/
-.sorting .sorting-buttons {
-	position: relative;
-}
-
-.sorting-buttons .button-up, 
-.sorting-buttons .button-down {
-	position: absolute;
-
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-}
-
-.sorting-buttons .button-up {
-	top: -3px;
-	left: 470px;
-
-	border-bottom: 10px solid #cacaca;
-}
-
-.sorting-buttons .button-down {
-	top: -4px;
-	left: 493px;
-
-	border-top: 10px solid #cacaca;
-}
-
-.sorting-buttons .button-up:hover {
-	border-bottom-color: #000000;
-}
-
-.sorting-buttons .button-down:hover {
-	border-top-color: #000000;
-}
-
-.sorting-buttons .button-up:focus {
-	border-bottom-color: #81b3d2;
-}
-
-.sorting-buttons .button-down:focus {
-	border-top-color: #81b3d2;
 }
 
 .sorting-variants a {
@@ -665,6 +621,56 @@ input[type="radio"].visually-hidden {
 	border: none;
 
 	color: #81b3d2;	
+}
+
+/*Стрелки-указатели типа сортировки*/
+.sorting .sorting-buttons {
+	position: relative;
+}
+
+.sorting-buttons button {
+	position: absolute;
+
+	width: 0;
+	height: 0;
+	padding: 0;
+	border: none;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+
+	box-shadow: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.sorting-buttons .button-up {
+	top: -3px;
+	left: -34px;
+
+	border-bottom: 10px solid #cacaca;
+}
+
+.sorting-buttons .button-down {
+	top: -4px;
+	left: -11px;
+
+	border-top: 10px solid #cacaca;
+}
+
+.sorting-buttons .button-up:hover {
+	border-bottom-color: #000000;
+}
+
+.sorting-buttons .button-down:hover {
+	border-top-color: #000000;
+}
+
+.sorting-buttons .button-up:focus {
+	border-bottom-color: #81b3d2;
+}
+
+.sorting-buttons .button-down:focus {
+	border-top-color: #81b3d2;
 }
 
 .search-result {
