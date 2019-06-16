@@ -393,6 +393,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	left: 50%;
 
+	display: none;
 	width: 456px;
 	min-height: 313px;
 	margin-left: -284px;
@@ -401,6 +402,11 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 
 	background-color: #ffffff;
+}
+
+/*Класс для управления формой на JS*/
+.switch {
+	display: block;
 }
 
 .search-item input {
@@ -521,13 +527,15 @@ input[type="radio"].visually-hidden {
 
 .filter-form {
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
+
+	padding-left: 63px;
+	padding-right: 63px;
 }
 
 .filter-form fieldset {
 	width: 240px;
-
+	margin: 0;
 	border: none;
 }
 
@@ -539,7 +547,83 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 }
 
-.filter-form .result-button {
+.filter-form .infrastructure,
+.filter-form .type {
+	margin-top: 27px;
+	padding: 8px;
+
+	letter-spacing: 0.02em;
+}
+
+.infrastructure legend,
+.type legend {
+	margin-bottom: 17px;
+}
+
+.infrastructure .infrastructure-list,
+.type .type-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.infrastructure-list .infrastructure-item,
+.type-list .type-item {
+	margin-bottom: 25px;
+}
+
+.infrastructure .infrastructure-item:last-child,
+.type-list .type-item:last-child {
+	margin-bottom: 0;
+}
+
+.infrastructure-item label,
+.type-item label {
+	position: relative;
+
+	padding-left: 40px;
+}
+
+.infrastructure-item input[type="checkbox"] + .checkbox-indicator,
+.type-item input[type="checkbox"] + .checkbox-indicator {
+	position: absolute;
+	top: -2px;
+	left: 1px;
+
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+}
+
+.infrastructure-item input[type="checkbox"]:checked + .checkbox-indicator,
+.type-item input[type="checkbox"]:checked + .checkbox-indicator {
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+}
+
+.infrastructure-item input[type="checkbox"]:disabled + .checkbox-indicator,
+.type-item input[type="checkbox"]:disabled + .checkbox-indicator {
+	background-image: url("../img/checkbox-off-disabled.svg");
+	background-repeat: no-repeat;
+}
+
+.infrastructure-item input[type="checkbox"]:checked:disabled + .checkbox-indicator,
+.type-item input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+	background-image: url("../img/checkbox-on-disabled.svg");
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+.price .result-button {
 	border: 2px solid #ffffff;
 
 	color: #ffffff;
@@ -550,7 +634,7 @@ input[type="radio"].visually-hidden {
 	background-color: transparent;
 }
 
-.filter-form .result-button:hover {
+.price .result-button:hover {
 	color: #000000;
 
 	background-color: #ffffff;
