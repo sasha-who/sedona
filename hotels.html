@@ -91,19 +91,25 @@
               <legend>Стоимость в сутки (Р):</legend>
               <ul class="price-list">
                 <li class="price-item">
-                  <label>
+                  <label class="price-min">
                     От 
-                    <input type="number" name="price-from">
+                    <input type="number" name="price-min" value="0">
                   </label>
                 </li>
                 <li class="price-item">
-                  <label>
+                  <label class="price-max">
                     До
-                    <input type="number" name="price-to">
+                    <input type="number" name="price-max" value="3000">
                   </label>
                 </li>
               </ul>
-              <!-- Здесь будет ползунок -->
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
               <button class="result-button">Показать</button>
             </fieldset>
           </form>

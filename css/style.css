@@ -60,6 +60,7 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
+	letter-spacing: 0.02em;
 
 	background-color: #ffffff;
 }
@@ -527,7 +528,6 @@ input[type="radio"].visually-hidden {
 
 .filter-form {
 	display: flex;
-	align-items: center;
 
 	padding-left: 63px;
 	padding-right: 63px;
@@ -558,6 +558,10 @@ input[type="radio"].visually-hidden {
 .infrastructure legend,
 .type legend {
 	margin-bottom: 17px;
+}
+
+.type legend {
+	letter-spacing: 0;
 }
 
 .infrastructure .infrastructure-list,
@@ -615,15 +619,108 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 }
 
+.filter-form .price {
+	margin-top: 27px;
+	margin-left: 228px;
+	padding: 8px;
 
+	letter-spacing: 0.01em;
+}
 
+.price .price-list {
+	position: relative;
 
+	width: 314px;
+	min-height: 32px;
+	border: 2px solid #ffffff;
+	margin: 0;
+	margin-top: 2px;
+	padding: 0;
+	border-radius: 3px;
 
+	list-style: none;
+}
 
+.price .price-list::before {
+	content: "";
 
+	position: absolute;
+	top: 50%;
+	left: 50%;
 
+	width: 2px;
+	height: 22px;
+
+	background-color: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.price-list .price-item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.price-list label {
+	width: 156px;
+	padding-left: 63px;
+}
+
+.price-list input {
+	width: 60px;
+	padding-top: 5px;
+	border: none;
+
+	font: inherit;
+	color: #ffffff;
+
+	background-color: transparent;
+}
+
+.price .range-controls {
+	position: relative;
+}
+
+.range-controls .scale {
+	width: 317px;
+	height: 2px;
+	margin-top: 20px;
+
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.scale .bar {
+	width: 80%;
+	height: 2px;
+
+	background-color: #ffffff;
+}
+
+.range-controls .range-toggle {
+	position: absolute;
+	top: -9px;
+
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+}
+
+.range-controls .range-toggle:hover {
+	border-width: 9px;
+}
+
+.range-controls .range-toggle-max {
+	left: 79%;
+}
 
 .price .result-button {
+	display: block;
+	margin-top: 32px;
+	margin-left: 83px;
+	padding: 5px 35px;
 	border: 2px solid #ffffff;
 
 	color: #ffffff;
