@@ -797,6 +797,8 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-rating {
+	position: relative;
+
 	margin-top: 75px;
 	margin-right: 0px;
 	padding-left: 18px;
@@ -806,6 +808,33 @@ input[type="radio"].visually-hidden {
 	color: #666666;
 
 	background-color: #f2f2f2;
+}
+
+/*Звёздочки рейтинга*/
+.hotel-rating::before {
+	content: "";
+
+	position: absolute;
+	right: 0;
+	bottom: 73px;
+
+	width: 89px;
+	height: 17px;
+
+	background-image: url("../img/star.svg");
+	background-repeat: space;
+}
+
+.hotel-rating-amara::before {
+	width: 89px;
+}
+
+.hotel-rating-desert::before {
+	width: 66px;
+}
+
+.hotel-rating-villas::before {
+	width: 42px;
 }
 
 /*Общий футер*/
