@@ -123,7 +123,7 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.navigation-item-current a {
+.navigation-current-item a {
 	color: #766357;
 }
 
@@ -670,6 +670,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-buttons .button-down:focus {
+	border-top-color: #81b3d2;
+}
+
+.sorting-current-button {
 	border-top-color: #81b3d2;
 }
 
