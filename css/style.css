@@ -560,9 +560,6 @@ input[type="radio"].visually-hidden {
 	min-height: 453px;
 
 	color: #000000;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 18px;
 
 	background-color: #ffffff;
 }
@@ -574,8 +571,11 @@ input[type="radio"].visually-hidden {
 	min-height: 86px;
 	padding-left: 72px;
 	padding-right: 73px;
-
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
 }
 
 .sorting .sorting-find {
@@ -673,28 +673,45 @@ input[type="radio"].visually-hidden {
 	border-top-color: #81b3d2;
 }
 
-.search-result {
-	color: #000000;
-
-	background-color: #ffffff;
-}
-
 .hotels-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
-.hotels-item {
+.hotels-list .hotels-item {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	min-height: 150px;
+	padding-left: 72px;
+	padding-right: 72px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hotels-item .hotel-flex-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-self: stretch;
+	margin-top: 0px;
+	padding-left: 30px;
 }
 
 .hotels-item img {
 	order: -1;
 }
 
+.hotel-name {
+	margin: 0;
+	margin-top: 25px;
+	letter-spacing: 0.01em;
+}
+
 .hotel-name a {
 	font-size: 21px;
+	line-height: 26px;
 	color: #000000;
 }
 
@@ -718,23 +735,34 @@ input[type="radio"].visually-hidden {
 	background-color: #73874b;
 }
 
-.hotel-status {
-	display: flex;
-	flex-direction: column;
-
+.hotel-category {
+	margin: 0;
+	margin-top: 6px;
 
 	font-weight: 400;
 	color: #333333;
+	line-height: 21px;
 }
 
-.hotel-rating {
-	font-weight: 400;
-	color: #666666;
+.hotel-category span {
+	display: inline-block;
+	width: 110px;
+	vertical-align: center;
+	margin-right: 3px;
+}
 
-	background-color: #f2f2f2;
+.hotel-buttons {
+	margin: 0;
+	margin-top: 14px;
 }
 
 .hotel-buttons a {
+	padding-top: 4px;
+	padding-right: 17px;
+	padding-bottom: 5px;
+	padding-left: 17px;
+	margin-right: 2px;
+
 	font: inherit;
 	color: #ffffff;
 	text-align: center;
@@ -766,6 +794,18 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #503e33;
+}
+
+.hotel-rating {
+	margin-top: 75px;
+	margin-right: 0px;
+	padding-left: 18px;
+	padding-right: 12px;
+
+	font-weight: 400;
+	color: #666666;
+
+	background-color: #f2f2f2;
 }
 
 /*Общий футер*/
