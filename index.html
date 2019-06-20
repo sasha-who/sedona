@@ -102,40 +102,39 @@
 					</ul>
 				</section>
 
-		  		<section class="hotel-search">
-		  			<h2 class="visually-hidden">Форма поиска гостиниц в Седоне</h2>
-		  			<p class="interest"><span>Заинтересовались?</span><br>
-		  			Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-						<button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
-					</div>
+		  	<section class="hotel-search">
+	  			<h2 class="visually-hidden">Форма поиска гостиниц в Седоне</h2>
+	  			<p class="interest"><span>Заинтересовались?</span><br>
+	  			Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
 					<form class="search-form" action="#" method="post">
+					<p class="search-item">
+						<label>
+							Дата заезда:
+							<input class="arrival-date" type="text" name="arrival-date" value="24 апреля 2017">
+						</label>
+					</p>
+					<p class="search-item">
+						<label>
+							Дата выезда:
+							<input class="departure-date" type="text" name="departure-date" value="4 июля 2017">
+						</label>
+					</p>
+					<div class="half-width-wrapper">
 						<p class="search-item">
 							<label>
-								Дата заезда:
-								<input class="arrival-date" type="text" name="arrival-date" value="24 апреля 2017">
+								Взрослые:
+								<input class="adults-number" type="text" name="adults-number" value="2">
 							</label>
 						</p>
 						<p class="search-item">
 							<label>
-								Дата выезда:
-								<input class="departure-date" type="text" name="departure-date" value="4 июля 2017">
+								Дети:
+								<input class="children-number" type="text" name="children-number" value="0">
 							</label>
 						</p>
-						<div class="half-width-wrapper">
-							<p class="search-item">
-								<label>
-									Взрослые:
-									<input class="adults-number" type="text" name="adults-number" value="2">
-								</label>
-							</p>
-							<p class="search-item">
-								<label>
-									Дети:
-									<input class="children-number" type="text" name="children-number" value="0">
-								</label>
-							</p>
-						</div>
-						<button class="button find-button" type="submit">Найти</button>
+					</div>
+					<button class="button find-button" type="submit">Найти</button>
 					</form>
 		  	</section>
 

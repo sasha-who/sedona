@@ -334,6 +334,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-search {
+	position: relative;
 	min-height: 290px;
 
 	text-align: center;
@@ -362,8 +363,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search-button {
-	position: relative;
-
 	display: block;
 	width: 568px;
 	min-height: 86px;
