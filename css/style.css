@@ -242,7 +242,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reason-item h3 {
-	margin-top: 47px;
+	margin-top: 48px;
 	margin-bottom: 24px;
 
 	font-size: 21px;
@@ -256,7 +256,7 @@ input[type="radio"].visually-hidden {
 	
 .reason-description span {
 	display: block;
-	margin-bottom: 21px;
+	margin-bottom: 23px;
 }
 
 .reasons-list .comfort {
@@ -344,7 +344,7 @@ input[type="radio"].visually-hidden {
 	min-height: 95px;
 	margin: 0;
 	padding: 0;
-	padding-top: 50px;
+	padding-top: 52px;
 
 	color: #333333;
 	font-weight: 400;
@@ -444,6 +444,28 @@ input[type="radio"].visually-hidden {
 	margin-top: 15px;
 }
 
+.search-item .button-calendar {
+	position: absolute;
+	top: -1px;
+	left: 427px;
+
+	width: 21px;
+	height: 22px;
+	border: none;
+
+	background-image: url("../img/calendar.svg");
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+}
+
+.search-item .button-calendar:hover {
+	background-image: url("../img/calendar-hover.svg");	
+}
+
+.search-item .button-calendar:active{
+	background-image: url("../img/calendar-active.svg");	
+}
+
 .half-width-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -453,7 +475,7 @@ input[type="radio"].visually-hidden {
 .half-width-wrapper input {
 	width: 114px;
 	margin-top: 2px;
-	margin-left: 35px;
+	margin-left: 36px;
 	padding: 0;
 	padding-left: 38px;
 	padding-right: 38px;
@@ -475,7 +497,7 @@ input[type="radio"].visually-hidden {
 } 
 
 .half-width-wrapper .children-number {
-	margin-left: 20px;
+	margin-left: 22px;
 }
 
 .search-form .find-button {
