@@ -455,7 +455,7 @@ input[type="radio"].visually-hidden {
 
 	background-image: url("../img/calendar.svg");
 	background-repeat: no-repeat;
-	background-color: #ffffff;
+	background-color: transparent;
 }
 
 .search-item .button-calendar:hover {
@@ -1098,14 +1098,13 @@ input[type="radio"].visually-hidden {
 	fill: rgba(255, 255, 255, 0.3);
 }
 
-/*Сделать через svg*/
 .site-footer .copyright {
 	display: flex;
 	width: 240px;
 	min-height: 120px;
 	margin: 0;
 	margin-right: 71px;
-	padding-top: 40px;
+	padding-top: 42px;
 
 
 	font-weight: 400;
@@ -1123,3 +1122,10 @@ input[type="radio"].visually-hidden {
 	margin-left: 9px;
 }
 
+.copyright-logo:hover path {
+	fill: #81b3d2;
+}
+
+.copyright-logo:focus path {
+	fill: #bdbbbc;
+}
