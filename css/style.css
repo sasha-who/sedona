@@ -393,7 +393,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	left: 50%;
 
-	display: none;
+	display: block;
 	width: 456px;
 	min-height: 313px;
 	margin-left: -284px;
@@ -406,7 +406,7 @@ input[type="radio"].visually-hidden {
 
 /*Класс для управления формой на JS*/
 .switch {
-	display: block;
+	display: none;
 }
 
 .search-item label {
