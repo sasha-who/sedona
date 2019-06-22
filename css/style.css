@@ -409,17 +409,19 @@ input[type="radio"].visually-hidden {
 	display: block;
 }
 
+.search-item label {
+	position: relative;
+}
+
 .search-item input {
 	box-sizing: border-box;
 	width: 346px;
 	height: 38px;
 	margin-left: 18px;
 	padding: 13px;
-	padding-right: 90px;
+	padding-right: 40px;
 
 	font: inherit;
-	/*Почему-то цвет текста не меняется. 
-	Его как-то к плейсхолдеру надо применить через селектор по атрибуту?*/
 	color: #000000;
 	text-transform: uppercase;
 
