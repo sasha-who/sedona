@@ -1009,6 +1009,7 @@ input[type="radio"].visually-hidden {
 .hotel-buttons {
 	margin: 0;
 	margin-top: 14px;
+	margin-bottom: 14px;
 }
 
 .hotel-buttons a {
@@ -1096,6 +1097,7 @@ input[type="radio"].visually-hidden {
 
 .site-footer {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	color: #000000;
 
@@ -1116,6 +1118,7 @@ input[type="radio"].visually-hidden {
 
 .site-footer .social-icons {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 150px;
 	min-height: 120px;
