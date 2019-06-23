@@ -904,8 +904,8 @@ input[type="radio"].visually-hidden {
 	border-top-color: #81b3d2;
 }
 
-.sorting-current-button {
-	border-top-color: #81b3d2;
+.sorting-buttons .sorting-current-button {
+	border-top: 10px solid #81b3d2;
 }
 
 .hotels-list {
