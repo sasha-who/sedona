@@ -165,8 +165,9 @@ input[type="radio"].visually-hidden {
 
 .reasons .description {
 	margin: 0;
-	padding: 0;
 	padding-top: 59px;
+	padding-left: 350px;
+	padding-right: 350px;
 
 	color: #000000;
 	font-size: 21px;
@@ -182,6 +183,7 @@ input[type="radio"].visually-hidden {
 
 	color: #333333;
 	font-weight: 400;
+	letter-spacing: 0.003em;
 
 	background-color: #ffffff;	
 }
@@ -353,6 +355,7 @@ input[type="radio"].visually-hidden {
 
 	font-weight: 400;
 	text-align: center;
+	letter-spacing: 0.007em;
 }
 
 .hotel-search {
@@ -366,17 +369,19 @@ input[type="radio"].visually-hidden {
 	min-height: 95px;
 	margin: 0;
 	padding: 0;
-	padding-top: 52px;
+	padding-top: 50px;
 
 	color: #333333;
 	font-weight: 400;
 	line-height: 24px;
+	letter-spacing: 0.002em;
 
 	background-color: #ffffff;	
 }
 
 .interest span {
 	display: block;
+	margin-bottom: 25px;
 
 	color: #000000;
 	font-size: 30px;
@@ -419,7 +424,7 @@ input[type="radio"].visually-hidden {
 	width: 456px;
 	min-height: 313px;
 	margin-left: -284px;
-	padding: 41px 56px;
+	padding: 41px 57px;
 
 	color: #000000;
 
@@ -468,8 +473,8 @@ input[type="radio"].visually-hidden {
 
 .search-item .button-calendar {
 	position: absolute;
-	top: -1px;
-	left: 427px;
+	top: -3px;
+	left: 426px;
 
 	width: 21px;
 	height: 22px;
@@ -1126,7 +1131,7 @@ input[type="radio"].visually-hidden {
 	min-height: 120px;
 	margin: 0;
 	margin-right: 71px;
-	padding-top: 42px;
+	padding-top: 40px;
 
 
 	font-weight: 400;
