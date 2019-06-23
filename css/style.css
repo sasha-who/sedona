@@ -75,7 +75,6 @@ input[type="radio"].visually-hidden {
 .main-navigation .navigation-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
 	align-items: center;
 	min-height: 56px;
 	padding: 0;
@@ -85,31 +84,24 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-list .navigation-item {
+	box-sizing: border-box;
 	width: 239px;
+	padding-left: 63px;
 
-	text-align: center;
+	letter-spacing: normal;
 }
 
-/*Выравнивание пунктов меню*/
+/*Здесь сложный селектор, чтобы сетка сохранялась при переполнении*/
+.navigation-list .navigation-item:nth-child(4n + 3) {
+	margin-left: 157px;
 
-.navigation-list .navigation-item:nth-child(3) {
-	margin-left: 220px;
+	text-align: right;
 }
 
-.navigation-item:first-child a {
-	margin-left: -22px;
-}
+.navigation-list .navigation-item:nth-child(4n + 4) {
+	margin-left: 5px;
 
-.navigation-item:nth-child(2) a {
-	margin-right: 14px;
-}
-
-.navigation-item:nth-child(3) a {
-	margin-left: 28px;
-}
-
-.navigation-item:last-child a {
-	margin-left: 43px;
+	text-align: right;
 }
 
 .navigation-list a {
