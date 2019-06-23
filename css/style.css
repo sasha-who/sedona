@@ -22,6 +22,11 @@ a {
 	text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -104,15 +109,15 @@ input[type="radio"].visually-hidden {
 	text-align: right;
 }
 
-.navigation-list a {
+.navigation-item a {
 	color: #000000;
 }
 
-.navigation-list a:hover {
+.navigation-item a:hover {
 	color: #81b3d2;
 }
 
-.navigation-list a:focus {
+.navigation-item a:focus {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -225,14 +230,14 @@ input[type="radio"].visually-hidden {
 	background-color: #eeeeee;
 }
 
-.reason-description {
+.reason-item p {
+	margin: 0;
+}
+
+.reason-item .reason-description {
 	display: flex;
 	flex-direction: column;
 	width: 400px;
-}
-
-.reason-item p {
-	margin: 0;
 }
 
 .reason-description h3 {
@@ -463,6 +468,27 @@ input[type="radio"].visually-hidden {
 	margin-top: 15px;
 }
 
+/*Изменяет цвет текста в placeholder для разных браузеров*/
+.search-item input::-webkit-input-placeholder {
+	color:#000000;
+}
+
+.search-item input::-moz-placeholder {
+	color:#000000;
+}
+
+.search-item input:-moz-placeholder {
+	color:#000000;
+}
+
+.search-item input:-ms-input-placeholder {
+	color:#000000;
+}
+
+.search-item input::placeholder {
+	color: #000000;
+}
+
 .search-item .button-calendar {
 	position: absolute;
 	top: -3px;
@@ -500,20 +526,6 @@ input[type="radio"].visually-hidden {
 	padding-right: 38px;
 	text-align: center;
 }
-
-/*Не работает, потому что не понимаю, кого из родителей
-как нужно спозиционировать*/
-.half-width-wrapper input::before,
-.half-width-wrapper input::after {
-	content: "";
-
-	position: absolute;
-
-	width: 12px;
-	height: 3px;
-
-	background-color: rgba(0, 0, 0, 0.3);
-} 
 
 .half-width-wrapper .children-number {
 	margin-left: 22px;
@@ -702,12 +714,12 @@ input[type="radio"].visually-hidden {
 	vertical-align: middle;
 }
 
-.price-list label {
+.price-item label {
 	width: 156px;
 	padding-left: 63px;
 }
 
-.price-list input {
+.price-item input {
 	width: 60px;
 	padding-top: 5px;
 	border: none;
@@ -716,6 +728,22 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;
 
 	background-color: transparent;
+}
+
+/*Скрывает управляющие кнопки*/
+.price-item input[type="number"]::-webkit-outer-spin-button,
+.price-item input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-item input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.price-item input[type="number"]:hover,
+.price-item input[type="number"]:focus {
+  -moz-appearance: number-input;
 }
 
 .price .range-controls {
