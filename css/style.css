@@ -241,22 +241,42 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 }
 
-.reason-item h3 {
-	margin-top: 48px;
-	margin-bottom: 24px;
+.reason-description h3 {
+	margin: 0 auto;
+	margin-top: 47px;
+	padding-left: 120px;
+	padding-right: 120px;
 
 	font-size: 21px;
 	text-align: center;
 }
 
 .reason-description p {
+	margin: 0 auto;
+	margin-top: 24px;
+	padding-left: 46px;
+	padding-right: 46px;
+
 	font-weight: 400;
 	text-align: center;
+	letter-spacing: 0.006em;
 }
 	
 .reason-description span {
 	display: block;
-	margin-bottom: 23px;
+	margin-bottom: 21px;
+}
+
+/*Выраванивание для переноса слов в соответствии с макетом*/
+.reason-item:nth-child(3) p,
+.reason-item:nth-child(5) p {
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+.reason-item:nth-child(4) p{
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
 .reasons-list .comfort {
@@ -273,9 +293,11 @@ input[type="radio"].visually-hidden {
 }
 
 .comfort .comfort-item {
+	box-sizing: border-box;
 	width: 400px;
-	padding: 10px;
+	padding: 50px;
 }
+
 
 .comfort .comfort-house::before {
 	content: "";
