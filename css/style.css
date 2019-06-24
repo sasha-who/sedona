@@ -587,8 +587,12 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-	min-height: 472px;
-	background-color: pink;
+	width: 100;
+	min-height: 593px;
+
+	background-image: url("../img/map.jpg");
+	background-repeat: no-repeat;
+	background-color: #e0edbb;
 }
 
 /*hotels.html*/
@@ -1130,17 +1134,24 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	min-height: 120px;
+	
 	color: #000000;
 
 	background-color: #ffffff;
 }
 
+.main-page .site-footer {
+	margin-top: -120px;
+
+	opacity: 0.9;
+}
+
 .site-footer .hashteg {
 	width: 240px;
-	min-height: 120px;
 	margin: 0;
 	margin-left: 70px;
-	padding-top: 47px;
+	padding-top: 45px;
 
 	font-size: 21px;
 	color: #000000;
@@ -1152,10 +1163,9 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 150px;
-	min-height: 120px;
 	margin: 0;
 	padding: 0;
-	padding-top: 37px;
+	padding-top: 35px;
 
 	list-style: none;
 	text-align: center;
@@ -1183,10 +1193,9 @@ input[type="radio"].visually-hidden {
 .site-footer .copyright {
 	display: flex;
 	width: 240px;
-	min-height: 120px;
 	margin: 0;
 	margin-right: 71px;
-	padding-top: 40px;
+	padding-top: 38px;
 
 
 	font-weight: 400;
