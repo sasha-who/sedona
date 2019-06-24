@@ -400,11 +400,14 @@ input[type="radio"].visually-hidden {
 }
 
 .search-button {
+	box-sizing: border-box;
 	display: block;
 	width: 568px;
 	min-height: 86px;
 	margin: 0 auto;
 	margin-top: 47px;
+	padding-top: 29px;
+	border: none;
 
 	font: inherit;
 	color: #ffffff;
@@ -413,8 +416,9 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 
 	background-color: #766357;
-	border: none;
 }
+
+
 
 .search-button:hover {
 	background-color: #604e43;
@@ -433,7 +437,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	width: 456px;
 	min-height: 313px;
-	margin-left: -284px;
+	margin-left: -285px;
 	padding: 41px 57px;
 
 	color: #000000;
