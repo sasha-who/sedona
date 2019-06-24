@@ -296,7 +296,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 330px;
 
 	color: #000000;
 
@@ -306,7 +305,9 @@ input[type="radio"].visually-hidden {
 .comfort .comfort-item {
 	box-sizing: border-box;
 	width: 400px;
+	min-height: 330px;
 	padding: 50px;
+	padding-top: 161px;
 }
 
 
@@ -351,7 +352,6 @@ input[type="radio"].visually-hidden {
 
 .comfort h3 {
 	margin: 0;
-	margin-top: 77px;
 	margin-bottom: 24px;
 
 	font-size: 21px;
