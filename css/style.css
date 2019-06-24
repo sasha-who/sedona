@@ -1,3 +1,8 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	min-width: 1200px;
 	min-height: 2762px;	
@@ -253,6 +258,7 @@ input[type="radio"].visually-hidden {
 .reason-description p {
 	margin: 0 auto;
 	margin-top: 24px;
+	margin-bottom: 24px;
 	padding-left: 46px;
 	padding-right: 46px;
 
@@ -604,6 +610,7 @@ input[type="radio"].visually-hidden {
 .filter-form .infrastructure,
 .filter-form .type {
 	margin-top: 27px;
+	margin-bottom: 24px;
 	padding: 8px;
 
 	letter-spacing: 0.02em;
