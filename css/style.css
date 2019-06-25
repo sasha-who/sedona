@@ -488,7 +488,6 @@ input[type="radio"].visually-hidden {
 .search-item input:focus {
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
-	outline: none;
 }
 
 .search-item .departure-date {
@@ -551,25 +550,39 @@ input[type="radio"].visually-hidden {
 }
 
 .half-width-wrapper .search-item {
-	margin-top: 13px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
 }
 
 .half-width-wrapper label {
+	align-self: center;
+
 	font-size: 14px;
 }
+
+.half-width-wrapper .adults-number {
+	margin-right: 38px;
+}
+
+.half-width-wrapper .children-number {
+	margin-right: 25px;
+}
+
 
 .half-width-wrapper input {
 	width: 38px;
 	margin: 0;
-	margin-top: 2px;
-	margin-left: 36px;
 	padding: 0;
+	padding-left: 4px;
 
 	font-size: 14px;
 	text-align: center;
 }
 
 .half-width-wrapper .button-quantity {
+	position: relative;
+
 	width: 38px;
 	min-height: 38px;
 	margin: 0;
@@ -577,12 +590,51 @@ input[type="radio"].visually-hidden {
 	border: none;
 
 
-	background-color: red;
+	background-color: #f2f2f2;
 }
+
+.button-quantity-minus::before, 
+.button-quantity-plus::before,
+.button-quantity-plus::after {
+	content: "";
+
+	position: absolute;
+	left: 15px;
+
+	width: 12px;
+	height: 3px;
+
+	background-color: #cacaca;
+}
+
+.button-quantity-plus::after {
+	transform: rotate(90deg);
+}
+
+.button-quantity-minus:hover::before,
+.button-quantity-plus:hover::before,
+.button-quantity-plus:hover::after {
+	background-color: #000000;
+}
+
+.button-quantity-minus:focus::before,
+.button-quantity-plus:focus::before,
+.button-quantity-plus:focus::after {
+	background-color: #81b3d2;
+}
+
+
+
+
+
+
+
+
+
 .search-form .find-button {
 	width: 100%;
 	min-height: 58px;
-	margin-top: 40px;
+	margin-top: 55px;
 
 	font: inherit;
 	font-size: 21px;
