@@ -450,6 +450,7 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 
 	background-color: #ffffff;
+	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 
 	animation-name: bouce;
 	animation-duration: 0.9s;
@@ -623,14 +624,6 @@ input[type="radio"].visually-hidden {
 	background-color: #81b3d2;
 }
 
-
-
-
-
-
-
-
-
 .search-form .find-button {
 	width: 100%;
 	min-height: 58px;
@@ -657,8 +650,8 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-	width: 100;
-	min-height: 593px;
+	width: 100%;
+	height: 593px;
 
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
@@ -1215,6 +1208,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-page .site-footer {
+	position: absolute;
+	z-index: 3;
+
 	margin-top: -120px;
 
 	background-color: rgba(255, 255, 255, 0.9);
