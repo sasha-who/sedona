@@ -96,7 +96,7 @@
 						<li class="reason-item reason-no-image">
 							<div class="reason-description">
 								<h3>Мало туристов</h3>
-								<p><span> — №5 — </span>Большинство едет в Гранд Каньон и толпится там</p>
+								<p><span> — №5 — </span>Большинство едет в Гранд Каньон и толпится там</p>
 							</div>
 						</li>
 					</ul>
@@ -112,28 +112,28 @@
 						<label>
 							Дата заезда:
 							<input class="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
-							<button class="button-calendar"></button>
 						</label>
-					</p>
+						<button class="button-calendar"></button>
+				</p>
 					<p class="search-item">
 						<label>
 							Дата выезда:
 							<input class="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
-							<button class="button-calendar"></button>
 						</label>
+						<button class="button-calendar"></button>
 					</p>
 					<div class="half-width-wrapper">
 						<p class="search-item">
 							<label for="adults-number">Взрослые:</label>
-							<!-- <button class="button-quantity button-quantity-minus"></button> -->
+							<button class="button-quantity button-quantity-minus"></button>
 							<input class="adults-number" id="adults-number" type="text" name="adults-number" placeholder="2">
-							<!-- <button class="button-quantity button-quantity-plus"></button> -->
+							<button class="button-quantity button-quantity-plus"></button>
 						</p>
 						<p class="search-item">
 							<label for="children-number">Дети:</label>
-							<!-- <button class="button-quantity button-quantity-minus"></button> -->
+							<button class="button-quantity button-quantity-minus"></button>
 							<input class="children-number" id="children-number" type="text" name="children-number" placeholder="0">
-							<!-- <button class="button-quantity button-quantity-plus"></button> -->
+							<button class="button-quantity button-quantity-plus"></button>
 						</p>
 					</div>
 					<button class="button find-button" type="submit">Найти</button>
@@ -193,7 +193,7 @@
 			form.addEventListener("submit", function (evt) {
 				if (!arrival.value || !departure.value) {
 					evt.preventDefault();
-					console.log("Введите даты");
+					alert("Пожалуйста, введите даты");
 				}
 			});
 		</script>

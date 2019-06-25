@@ -254,8 +254,8 @@ input[type="radio"].visually-hidden {
 .reason-description h3 {
 	margin: 0 auto;
 	margin-top: 47px;
-	padding-left: 120px;
-	padding-right: 120px;
+	padding-left: 121px;
+	padding-right: 121px;
 
 	font-size: 21px;
 	text-align: center;
@@ -281,8 +281,8 @@ input[type="radio"].visually-hidden {
 /*Выраванивание для переноса слов в соответствии с макетом*/
 .reason-item:nth-child(3) p,
 .reason-item:nth-child(5) p {
-	padding-left: 75px;
-	padding-right: 75px;
+	padding-left: 64px;
+	padding-right: 64px;
 }
 
 .reason-item:nth-child(4) p{
@@ -460,8 +460,9 @@ input[type="radio"].visually-hidden {
 	display: none;
 }
 
-.search-item label {
+.search-form .search-item {
 	position: relative;
+	min-height: 38px;
 }
 
 .search-item input {
@@ -477,7 +478,7 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 
 	background-color: #f2f2f2;
-	border: none;
+	border: 2px solid transparent;
 }
 
 .search-item input:hover {
@@ -492,7 +493,10 @@ input[type="radio"].visually-hidden {
 
 .search-item .departure-date {
 	margin-left: 14px;
-	margin-top: 15px;
+}
+
+.search-item:not(:first-child) {
+	margin-top: 28px;
 }
 
 /*Изменяет цвет текста в placeholder для разных браузеров*/
@@ -518,7 +522,7 @@ input[type="radio"].visually-hidden {
 
 .search-item .button-calendar {
 	position: absolute;
-	top: -3px;
+	top: 8px;
 	left: 426px;
 
 	width: 21px;
@@ -1161,7 +1165,7 @@ input[type="radio"].visually-hidden {
 .main-page .site-footer {
 	margin-top: -120px;
 
-	opacity: 0.9;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .site-footer .hashteg {
