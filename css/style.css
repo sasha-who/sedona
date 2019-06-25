@@ -430,6 +430,13 @@ input[type="radio"].visually-hidden {
 	background-color: #503e33;
 }
 
+@keyframes bouce {
+	0%   { transform: translateX(-2000px); }
+	70%  { transform: translateX(30px);    }
+	90%  { transform: translateX(-10px);   }
+	100% { transform: translateX(0px);     }
+}
+
 .search-form {
 	position: absolute;
 	left: 50%;
@@ -443,6 +450,9 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 
 	background-color: #ffffff;
+
+	animation-name: bouce;
+	animation-duration: 0.9s;
 }
 
 /*Класс для управления формой на JS*/
