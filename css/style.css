@@ -87,6 +87,9 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	left: 50%;
 
+	width: 140px;
+	height: 71px;
+
 	margin-left: -70px;
 }
 
@@ -157,15 +160,12 @@ input[type="radio"].visually-hidden {
 	background-color: #687d8c;
 }
 
-.introduction .photo-title {
-	display: block;
-	margin: 0 auto;
-	padding-top: 75px;
-}
-
 .introduction p {
-	margin: 0;
+	width: 459px;
+	height: 353px;
+	margin: 0 auto;
 	padding: 0;
+	padding-top: 75px;
 }
 
 .reasons {
@@ -855,6 +855,8 @@ input[type="radio"].visually-hidden {
 	height: 23px;
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
+
+	cursor: pointer;
 }
 
 .infrastructure-item input[type="checkbox"]:checked + .checkbox-indicator,
@@ -1186,12 +1188,6 @@ input[type="radio"].visually-hidden {
 	padding-left: 30px;
 }
 
-.hotels-item img {
-	-webkit-box-ordinal-group: 0;
-		-ms-flex-order: -1;
-			order: -1;
-}
-
 .hotel-name {
 	margin: 0;
 	margin-top: 25px;
@@ -1284,6 +1280,14 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #503e33;
+}
+
+.hotels-item .hotel-image {
+	width: 135px;
+	height: 90px;
+	-webkit-box-ordinal-group: 0;
+	-ms-flex-order: -1;
+		order: -1;
 }
 
 .hotel-rating {
