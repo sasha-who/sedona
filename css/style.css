@@ -736,7 +736,7 @@ input[type="radio"].visually-hidden {
 
 .map {
 	position: relative;
-	
+
 	width: 100%;
 	height: 594px;
 
@@ -1435,10 +1435,10 @@ input[type="radio"].visually-hidden {
 	margin-left: 9px;
 }
 
-.copyright-logo:hover path {
+.copyright-logo svg:hover path {
 	fill: #81b3d2;
 }
 
-.copyright-logo:focus path {
+.copyright-logo svg:focus path {
 	fill: #bdbbbc;
 }
