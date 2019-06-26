@@ -477,7 +477,6 @@ input[type="radio"].visually-hidden {
 	box-sizing: border-box;
 	width: 346px;
 	height: 38px;
-	margin-left: 18px;
 	padding: 13px;
 	padding-right: 40px;
 
@@ -498,8 +497,11 @@ input[type="radio"].visually-hidden {
 	border: 2px solid #e5e5e5;
 }
 
-.search-item .departure-date {
-	margin-left: 14px;
+.search-form .data-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .search-item:not(:first-child) {
@@ -607,6 +609,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 
 	position: absolute;
+	top: 19px;
 	left: 15px;
 
 	width: 12px;
@@ -877,7 +880,7 @@ input[type="radio"].visually-hidden {
 }
 
 .scale .bar {
-	width: 80%;
+	width: 254px;
 	height: 2px;
 
 	background-color: #ffffff;
@@ -887,13 +890,13 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: -9px;
 
-  width: 4px;
-  height: 4px;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
 
-  background-color: #ababab;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 
 .range-controls .range-toggle:hover {
@@ -901,7 +904,7 @@ input[type="radio"].visually-hidden {
 }
 
 .range-controls .range-toggle-max {
-	left: 79%;
+	left: 253px;
 }
 
 .price .result-button {
