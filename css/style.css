@@ -211,6 +211,7 @@ input[type="radio"].visually-hidden {
 
 	color: #333333;
 	font-weight: 400;
+	line-height: 26px;
 	letter-spacing: 0.003em;
 
 	background-color: #ffffff;	
@@ -479,17 +480,17 @@ input[type="radio"].visually-hidden {
 }
 
 @-webkit-keyframes bouce {
-	0%   { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
-	70%  { -webkit-transform: translateX(30px); transform: translateX(30px);    }
-	90%  { -webkit-transform: translateX(-10px); transform: translateX(-10px);   }
-	100% { -webkit-transform: translateX(0px); transform: translateX(0px);     }
+	0%   { -webkit-transform: translateY(-2000px); transform: translateY(-250px); }
+	70%  { -webkit-transform: translateY(30px); transform: translateY(30px);    }
+	90%  { -webkit-transform: translateY(-10px); transform: translateY(-10px);   }
+	100% { -webkit-transform: translateY(0px); transform: translateY(0px);     }
 }
 
 @keyframes bouce {
-	0%   { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
-	70%  { -webkit-transform: translateX(30px); transform: translateX(30px);    }
-	90%  { -webkit-transform: translateX(-10px); transform: translateX(-10px);   }
-	100% { -webkit-transform: translateX(0px); transform: translateX(0px);     }
+	0%   { -webkit-transform: translateY(-2000px); transform: translateY(-250px); }
+	70%  { -webkit-transform: translateY(30px); transform: translateY(30px);    }
+	90%  { -webkit-transform: translateY(-10px); transform: translateY(-10px);   }
+	100% { -webkit-transform: translateY(0px); transform: translateY(0px);     }
 }
 
 .search-form {
@@ -585,6 +586,16 @@ input[type="radio"].visually-hidden {
 
 .search-item input::-ms-input-placeholder {
 	color: #000000;
+}
+
+.search-item input:-moz-placeholder {
+	color: #000000;
+	opacity: 1;
+}
+
+.search-item input::-moz-placeholder {
+	color: #000000;
+	opacity: 1;
 }
 
 .search-item input::placeholder {
@@ -987,6 +998,8 @@ input[type="radio"].visually-hidden {
 
 .range-controls .range-toggle:hover {
 	border-width: 9px;
+
+	cursor: pointer;
 }
 
 .range-controls .range-toggle-max {
@@ -1307,6 +1320,7 @@ input[type="radio"].visually-hidden {
 	padding-right: 13px;
 
 	font-weight: 400;
+	line-height: 21px;
 	color: #666666;
 	text-align: center;
 
@@ -1448,10 +1462,15 @@ input[type="radio"].visually-hidden {
 	margin-left: 9px;
 }
 
-.copyright-logo svg:hover path {
+.copyright-logo:hover path {
 	fill: #81b3d2;
 }
 
+.copyright-logo:focus path {
+	fill: #bdbbbc;
+}
+
+/*Это нужно для IE, потому что не передаёт состояние на дочерний элемент*/
 .copyright-logo svg:focus path {
 	fill: #bdbbbc;
 }
