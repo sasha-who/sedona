@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-min.css">
 	</head>
 	<body class="main-page">
 	  	<div class="main-container">
@@ -179,25 +179,6 @@
 			</footer>
 		</div>
 
-		<script type="text/javascript">
-			var button = document.querySelector(".search-button"); 
-			var form = document.querySelector(".search-form");
-
-			var arrival = form.querySelector("[name=arrival-date]");
-			var departure = form.querySelector("[name=departure-date]");
-
-			button.addEventListener("click", function(evt) {
-				evt.preventDefault();
-				form.classList.toggle("switch");
-				arrival.focus();
-			});
-
-			form.addEventListener("submit", function (evt) {
-				if (!arrival.value || !departure.value) {
-					evt.preventDefault();
-					alert("Пожалуйста, введите даты");
-				}
-			});
-		</script>
+		<script src="js/form-min.js"></script>
 	</body>
 </html>
