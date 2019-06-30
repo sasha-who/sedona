@@ -9,7 +9,7 @@ body {
 	padding: 0;
 	margin: 0;
 
-	font-family: "PT Sans", Times New Roman, serif;
+	font-family: "PT Sans", "Times New Roman", serif;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 26px;
@@ -817,7 +817,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 
 	padding-left: 63px;
-	padding-right: 63px;
 }
 
 .filter-form fieldset {
@@ -844,7 +843,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-form .type {
-	margin-left: 99px;
+	margin-left: 79px;
 }
 
 .infrastructure legend,
@@ -926,7 +925,8 @@ input[type="radio"].visually-hidden {
 
 .filter-form .price {
 	margin-top: 27px;
-	margin-left: 320px;
+	margin-left: 280px;
+	margin-right: 60px;
 	padding: 8px;
 
 	letter-spacing: 0.01em;
@@ -1087,10 +1087,14 @@ input[type="radio"].visually-hidden {
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	box-sizing: border-box;
 }
 
 .sorting .sorting-find {
 	min-width: 120px;
+
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
@@ -1282,7 +1286,7 @@ input[type="radio"].visually-hidden {
 .hotel-category span {
 	display: inline-block;
 	width: 110px;
-	vertical-align: center;
+	vertical-align: middle;
 	margin-right: 3px;
 }
 
@@ -1359,7 +1363,7 @@ input[type="radio"].visually-hidden {
 	height: 27px;
 	margin-top: 90px;
 	margin-right: 0px;
-	padding-top: 2px;
+	padding-top: 6px;
 	padding-left: 13px;
 	padding-right: 13px;
 
