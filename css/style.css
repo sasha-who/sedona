@@ -111,6 +111,8 @@ input[type="radio"].visually-hidden {
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	width: 239px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	padding-left: 63px;
 
 	letter-spacing: normal;
@@ -1196,6 +1198,7 @@ input[type="radio"].visually-hidden {
 			flex-grow: 1;
 	-ms-flex-item-align: stretch;
 		align-self: stretch;
+	width: 100%;
 	margin-top: 0px;
 	padding-left: 30px;
 }
@@ -1296,11 +1299,19 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-item .hotel-image {
+	-ms-flex-item-align: start;
+		align-self: flex-start;
 	min-width: 135px;
 	height: 90px;
+	margin: 0;
 	-webkit-box-ordinal-group: 0;
 	-ms-flex-order: -1;
 		order: -1;
+}
+
+.hotel-image img {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .hotel-rating {
