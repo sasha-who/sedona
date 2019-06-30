@@ -600,23 +600,27 @@ input[type="radio"].visually-hidden {
 .search-item .button-calendar {
 	position: absolute;
 	top: 8px;
-	left: 426px;
+	left: 428px;
 
 	width: 21px;
 	height: 22px;
 	border: none;
 
-	background-image: url("../img/calendar.svg");
-	background-repeat: no-repeat;
 	background-color: transparent;
 }
 
-.search-item .button-calendar:hover {
-	background-image: url("../img/calendar-hover.svg");	
+.button-calendar svg {
+	position: absolute;
+	top: -1px;
+	left: -1px;
 }
 
-.search-item .button-calendar:active{
-	background-image: url("../img/calendar-active.svg");	
+.button-calendar:hover path {
+	fill: #000000;
+}
+
+.button-calendar:focus path {
+	fill: #81b3d2;
 }
 
 .half-width-wrapper {
