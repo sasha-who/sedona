@@ -800,7 +800,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-form fieldset {
-	width: 240px;
 	margin: 0;
 	margin-top: 27px;
 	margin-bottom: 24px;
@@ -823,6 +822,10 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 0.02em;
 }
 
+.filter-form .type {
+	margin-left: 99px;
+}
+
 .infrastructure legend,
 .type legend {
 	margin-bottom: 17px;
@@ -834,14 +837,25 @@ input[type="radio"].visually-hidden {
 
 .infrastructure .infrastructure-list,
 .type .type-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+		flex-direction: column;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
+	max-height: 400px;
 
 	list-style: none;
 }
 
 .infrastructure-list .infrastructure-item,
 .type-list .type-item {
+	margin-right: 50px;
 	margin-bottom: 25px;
 }
 
@@ -891,7 +905,7 @@ input[type="radio"].visually-hidden {
 
 .filter-form .price {
 	margin-top: 27px;
-	margin-left: 228px;
+	margin-left: 320px;
 	padding: 8px;
 
 	letter-spacing: 0.01em;
@@ -1012,7 +1026,7 @@ input[type="radio"].visually-hidden {
 	width: 136px;
 	margin-top: 32px;
 	margin-left: 85px;
-	padding: 5px 35px;
+	padding: 5px 30px;
 	border: 2px solid #ffffff;
 
 	color: #ffffff;
@@ -1041,8 +1055,6 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
 	-webkit-box-align: center;
 		-ms-flex-align: center;
 			align-items: center;
@@ -1057,14 +1069,15 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting .sorting-find {
+	min-width: 120px;
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
 }
 
 .sorting .sorting-type {
-	margin-top: 15px;
-	margin-left: 48px;
+	margin-top: 14px;
+	margin-left: 44px;
 }
 
 .sorting .sorting-variants {
@@ -1413,6 +1426,7 @@ input[type="radio"].visually-hidden {
 			justify-content: space-between;
 	width: 150px;
 	margin: 0;
+	margin-bottom: 20px;
 	padding: 0;
 	padding-top: 35px;
 
@@ -1434,6 +1448,7 @@ input[type="radio"].visually-hidden {
 			align-items: center;
 	width: 46px;
 	height: 48px;
+	margin-bottom: 6px;
 
 	background-color: #81b3d2;
 }
