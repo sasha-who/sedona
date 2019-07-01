@@ -477,14 +477,14 @@ input[type="radio"].visually-hidden {
 	background-color: #503e33;
 }
 
-@-webkit-keyframes bouce {
+@-webkit-keyframes bounce {
 	0%   { -webkit-transform: translateY(-2000px); transform: translateY(-250px); }
 	70%  { -webkit-transform: translateY(30px); transform: translateY(30px);    }
 	90%  { -webkit-transform: translateY(-10px); transform: translateY(-10px);   }
 	100% { -webkit-transform: translateY(0px); transform: translateY(0px);     }
 }
 
-@keyframes bouce {
+@keyframes bounce {
 	0%   { -webkit-transform: translateY(-2000px); transform: translateY(-250px); }
 	70%  { -webkit-transform: translateY(30px); transform: translateY(30px); }
 	90%  { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
@@ -524,8 +524,8 @@ input[type="radio"].visually-hidden {
 	-webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 			box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 
-	-webkit-animation-name: bouce;
-			animation-name: bouce;
+	-webkit-animation-name: bounce;
+			animation-name: bounce;
 	-webkit-animation-duration: 0.9s;
 			animation-duration: 0.9s;
 }
