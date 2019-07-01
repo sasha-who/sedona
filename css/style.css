@@ -801,10 +801,6 @@ input[type="radio"].visually-hidden {
 	line-height: 21px;
 
 	background-color: #657a8a;
-	background-image: url("../img/filter-background.jpg");
-	background-position: 0 -294px;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .hotels-filter ul {
@@ -815,8 +811,12 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-
 	padding-left: 63px;
+
+	background-image: url("../img/filter-background.jpg");
+	background-position: 0 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .filter-form fieldset {
@@ -857,18 +857,8 @@ input[type="radio"].visually-hidden {
 
 .infrastructure .infrastructure-list,
 .type .type-list {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-		flex-direction: column;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	max-height: 400px;
 
 	list-style: none;
 }
@@ -1446,9 +1436,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-	-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-			justify-content: space-between;
 	width: 150px;
 	margin: 0;
 	margin-bottom: 20px;
@@ -1457,6 +1444,10 @@ input[type="radio"].visually-hidden {
 
 	list-style: none;
 	text-align: center;
+}
+
+.social-item:nth-child(3n) a {
+	margin-right: 0;
 }
 
 .social-icons .social-button {
@@ -1474,6 +1465,7 @@ input[type="radio"].visually-hidden {
 	width: 46px;
 	height: 48px;
 	margin-bottom: 6px;
+	margin-right: 6px;
 
 	background-color: #81b3d2;
 }
